@@ -1,0 +1,137 @@
+body {
+    background-color: #121212;
+    color: #fff;
+}
+
+/* Tarjetas Discover */
+.discover-card {
+    background-color: #179a9b;
+    border-radius: 14px;
+    padding: 1rem;
+    margin-bottom: 18px;
+    box-shadow: rgba(0,0,0,0.3) 0 3px 10px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-info img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-info span {
+    font-size: 0.85rem;
+    color: #bfbfbf;
+}
+
+.descripcion {
+    margin: 10px 0;
+    font-size: 0.95rem;
+}
+
+.post-img {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 8px;
+    object-fit: cover;
+}
+
+
+/* ====== CONTENIDO GENERAL ====== */
+body {
+    background-color: #ddeee7;
+    color: #fff;
+}
+
+.conte-principal {
+    padding-top: 90px;
+}
+
+
+
+
+/* ====== TOOLBAR / NAVBAR ====== */
+.logo {
+  width: 35px;
+  height: 35px;
+  background-size: cover;
+  background-position: center;
+}
+
+.custom-navbar {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 93%;
+    padding: .6rem 1rem;
+    border-radius: 12px;
+    background-color: #15678f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.brand-section {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.brand-name {
+    font-size: 1.5rem;
+    color: #eee;
+}
+
+.icon-section i {
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    color: #ccc;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.icon-section i:hover {
+    color: #00bcd4;
+}
+
+
+/* ====== FOOTER ====== */
+footer {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 93%;
+    background-color: #15678f;
+    border-radius: 12px;
+    padding: .8rem 1.5rem;
+    box-shadow: 0px 2px 10px rgba(0,0,0,.2);
+    z-index: 1000;
+}
+
+.footer-buttons{
+    display:flex;
+    justify-content:space-between;
+}
+
+.footer-buttons button{
+    background:none;
+    border:none;
+    font-size:1.5rem;
+    color:#fff;
+    transition:.3s;
+}
+
+.footer-buttons button:hover{
+    color:#0dcaf0;
+}
+
