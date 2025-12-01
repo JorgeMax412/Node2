@@ -43,7 +43,7 @@
             </div>
             <img class="post-img"
                 src="https://images.unsplash.com/photo-1556155092-490a1ba16284?auto=format&fit=crop&w=800&q=80"
-                data-bs-toggle="modal" data-bs-target="#post1Modal" style="cursor:pointer;">
+                data-bs-toggle="modal" data-bs-target="#modalPost" style="cursor:pointer;">
 
 
             <p class="descripcion">Rediseñé mi portafolio con Vue 3 y Tailwind. ¿Qué opinan del modo dark?</p>
@@ -62,64 +62,61 @@
 
         </div>
 
-        <!-- Modal POST 1 -->
-        <div class="modal fade" id="post1Modal" tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
-                <div class="modal-content modal-post-body">
+        <!-- MODAL -->
+        <div class="modal fade" id="modalPost" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg-down">
+                <div class="modal-content modal-body-custom">
 
-                    <!-- HEADER -->
-                    <div class="modal-header modal-head">
-                        <div class="d-flex align-items-center gap-2">
+
+
+                    <nav class="custom-navbar">
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </nav>
+
+                    <div class="post-modal-content">
+
+                        <!-- Sección usuario -->
+                        <div class="user-section">
                             <img src="https://randomuser.me/api/portraits/men/45.jpg" class="avatar">
                             <div>
-                                <h6 class="m-0 fw-bold">Carlos</h6>
-                                <small class="text-muted">Frontend Devs • Hace 1h</small>
+                                <h2 class="nombre">Carlos</h2>
+                                <p class="comunidad">Comunidad WebDev</p>
                             </div>
                         </div>
 
-                        <!-- Botón cerrar estilo mockup -->
-                        <button class="close-btn" data-bs-dismiss="modal">✕</button>
-                    </div>
+                        <!-- Imagen -->
+                        <img src="https://images.unsplash.com/photo-1556155092-490a1ba16284?auto=format&fit=crop&w=800&q=80"
+                            class="post-image">
 
-                    <!-- IMAGEN (ya no es fixed, se mueve con el scroll) -->
-                    <img src="https://images.unsplash.com/photo-1556155092-490a1ba16284?auto=format&fit=crop&w=800&q=80"
-                        class="post-image">
+                        <p class="descripcion">
+                            Esta es la descripción del post desde Bootstrap, tal como en Ionic.
+                        </p>
 
-                    <!-- SCROLL INTERNO -->
-                    <div class="content-scroll">
+                        <!-- COMENTARIOS -->
+                        <div class="comentarios">
+                            <hr>
+                            <span>Dejar un comentario...</span>
+                            <hr>
 
-                        <p class="desc">Rediseñé mi portafolio con Vue 3 y Tailwind. ¿Qué opinan del modo dark?</p>
+                            <div class="comentario">
+                                <img src="https://randomuser.me/api/portraits/women/30.jpg" class="comentario-avatar">
+                                <div class="comentario-body">
+                                    <strong>Sofia</strong>
+                                    <p>Excelente contenido 🔥</p>
+                                </div>
+                            </div>
 
-                        <h6 class="fw-bold mb-3">23 comentarios</h6>
+                            <div class="comentario">
+                                <img src="https://randomuser.me/api/portraits/men/40.jpg" class="comentario-avatar">
+                                <div class="comentario-body">
+                                    <strong>Diego</strong>
+                                    <p>Muy interesante el post</p>
+                                </div>
+                            </div>
 
-                        <!-- Comentarios -->
-                        <div class="comentario">
-                            <img src="https://randomuser.me/api/portraits/women/48.jpg">
-                            <p><b>Nancy</b><br>Se ve genial!</p>
-                        </div>
-
-                        <div class="comentario">
-                            <img src="https://randomuser.me/api/portraits/women/65.jpg">
-                            <p><b>Lucia</b><br>Buen diseño, me gusta la paleta de colores</p>
-                        </div>
-
-                        <div class="comentario">
-                            <img src="https://randomuser.me/api/portraits/men/33.jpg">
-                            <p><b>Diego</b><br>¡Quedó muy profesional!</p>
-                        </div>
-
-                        <div class="comentario">
-                            <img src="https://randomuser.me/api/portraits/women/12.jpg">
-                            <p><b>Sofia</b><br>Se nota el nivel, muy bien trabajado 🔥</p>
                         </div>
 
                     </div>
-
-                    <!-- INPUT -->
-                    <div class="modal-footer border-0 p-2">
-                        <input type="text" class="modal-input" placeholder="Agrega un comentario...">
-                    </div>
-
                 </div>
             </div>
         </div>
