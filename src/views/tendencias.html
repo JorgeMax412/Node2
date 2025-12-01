@@ -42,7 +42,10 @@
                 </div>
             </div>
             <img class="post-img"
-                src="https://images.unsplash.com/photo-1556155092-490a1ba16284?auto=format&fit=crop&w=800&q=80">
+                src="https://images.unsplash.com/photo-1556155092-490a1ba16284?auto=format&fit=crop&w=800&q=80"
+                data-bs-toggle="modal" data-bs-target="#post1Modal" style="cursor:pointer;">
+
+
             <p class="descripcion">Rediseñé mi portafolio con Vue 3 y Tailwind. ¿Qué opinan del modo dark?</p>
 
             <div class="post-actions">
@@ -58,6 +61,69 @@
             </div>
 
         </div>
+
+        <!-- Modal POST 1 -->
+        <div class="modal fade" id="post1Modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+                <div class="modal-content modal-post-body">
+
+                    <!-- HEADER -->
+                    <div class="modal-header modal-head">
+                        <div class="d-flex align-items-center gap-2">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" class="avatar">
+                            <div>
+                                <h6 class="m-0 fw-bold">Carlos</h6>
+                                <small class="text-muted">Frontend Devs • Hace 1h</small>
+                            </div>
+                        </div>
+
+                        <!-- Botón cerrar estilo mockup -->
+                        <button class="close-btn" data-bs-dismiss="modal">✕</button>
+                    </div>
+
+                    <!-- IMAGEN (ya no es fixed, se mueve con el scroll) -->
+                    <img src="https://images.unsplash.com/photo-1556155092-490a1ba16284?auto=format&fit=crop&w=800&q=80"
+                        class="post-image">
+
+                    <!-- SCROLL INTERNO -->
+                    <div class="content-scroll">
+
+                        <p class="desc">Rediseñé mi portafolio con Vue 3 y Tailwind. ¿Qué opinan del modo dark?</p>
+
+                        <h6 class="fw-bold mb-3">23 comentarios</h6>
+
+                        <!-- Comentarios -->
+                        <div class="comentario">
+                            <img src="https://randomuser.me/api/portraits/women/48.jpg">
+                            <p><b>Nancy</b><br>Se ve genial!</p>
+                        </div>
+
+                        <div class="comentario">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg">
+                            <p><b>Lucia</b><br>Buen diseño, me gusta la paleta de colores</p>
+                        </div>
+
+                        <div class="comentario">
+                            <img src="https://randomuser.me/api/portraits/men/33.jpg">
+                            <p><b>Diego</b><br>¡Quedó muy profesional!</p>
+                        </div>
+
+                        <div class="comentario">
+                            <img src="https://randomuser.me/api/portraits/women/12.jpg">
+                            <p><b>Sofia</b><br>Se nota el nivel, muy bien trabajado 🔥</p>
+                        </div>
+
+                    </div>
+
+                    <!-- INPUT -->
+                    <div class="modal-footer border-0 p-2">
+                        <input type="text" class="modal-input" placeholder="Agrega un comentario...">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
 
         <!-- 🔵 POST 2 -->
         <div class="discover-card">
@@ -206,6 +272,9 @@
             <a href="../views/perfil.html"><button><i class="fa-solid fa-user"></i></button></a>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 
 </body>
 
