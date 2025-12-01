@@ -4,6 +4,7 @@ body {
 
 /* Tarjetas Discover */
 .discover-card {
+    width: 97%;
     background-color: #179a9b;
     border-radius: 14px;
     padding: 1rem;
